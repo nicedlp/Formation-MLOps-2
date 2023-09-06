@@ -25,6 +25,7 @@ jobs:
         run: vulture formation_indus_ds_avancee scripts --min-confidence 100
       - name: Run tests
         run: python -m pytest tests/test_unit
+      - name: Behave
         run: behave tests/test_functional/features
       
 
